@@ -1,0 +1,265 @@
+/* RESET */
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+font-family:'Segoe UI',sans-serif;
+background:#000;
+color:#fff;
+line-height:1.6;
+cursor:none;
+}
+
+h2{
+text-align:center;
+font-size:2.5rem;
+margin-bottom:1rem;
+}
+
+p{font-size:1.1rem;}
+
+a{
+color:#FFD000;
+text-decoration:none;
+}
+
+/* TEXTO AMARELO */
+
+.duto-yellow{
+color:#FFD000;
+}
+
+/* BOTÃO */
+
+.btn{
+display:inline-block;
+margin-top:2rem;
+padding:0.8rem 2rem;
+background:#FFD000;
+border-radius:30px;
+color:#000;
+font-weight:bold;
+transition:transform .3s, box-shadow .3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
+box-shadow:0 0 15px #FFD000;
+animation:pulse 1s infinite;
+}
+
+@keyframes pulse{
+0%{transform:scale(1.05);}
+50%{transform:scale(1.1);}
+100%{transform:scale(1.05);}
+}
+
+/* HERO */
+
+.hero{
+position:relative;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+overflow:hidden;
+background:#000;
+}
+
+#particles{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+z-index:0;
+}
+
+.hero-content{
+position:relative;
+z-index:1;
+animation:fadeIn 3s ease;
+max-width:800px;
+padding:20px;
+}
+
+.title{
+font-size:5rem;
+color:#fff;
+}
+
+.subtitle{
+font-size:1.8rem;
+margin-top:1rem;
+color:#FFD000;
+}
+
+.tagline{
+margin-top:10px;
+font-size:1.1rem;
+color:#ddd;
+max-width:600px;
+margin-left:auto;
+margin-right:auto;
+}
+
+/* ANIMAÇÕES */
+
+@keyframes fadeIn{
+from{opacity:0;transform:translateY(30px);}
+to{opacity:1;transform:translateY(0);}
+}
+
+/* SERVIÇOS */
+
+.servicos{
+min-height:100vh;
+padding:5rem 2rem;
+background:#0a0a0a;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:2rem;
+margin-top:3rem;
+}
+
+.card{
+background:#111;
+border-radius:15px;
+padding:2rem;
+text-align:center;
+transition:transform .3s, box-shadow .3s;
+opacity:0;
+transform: translateY(50px);
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 20px rgba(255,208,0,0.5);
+}
+
+.card h3{
+font-size:1.5rem;
+margin-bottom:1rem;
+color:#FFD000;
+}
+
+/* SOBRE */
+
+.sobre{
+min-height:100vh;
+padding:5rem 2rem;
+background:#000;
+display:flex;
+justify-content:center;
+align-items:center;
+opacity:0;
+transform: translateY(50px);
+transition:all 1s ease;
+}
+
+.sobre-container{
+max-width:1200px;
+width:100%;
+display:flex;
+flex-wrap:wrap;
+align-items:center;
+gap:2rem;
+}
+
+.sobre-texto{
+flex:1 1 500px;
+}
+
+.sobre-texto h3{
+margin-top:1.5rem;
+color:#FFD000;
+}
+
+.sobre-foto{
+flex:1 1 300px;
+display:flex;
+justify-content:center;
+}
+
+.sobre-foto img{
+width:250px;
+height:250px;
+object-fit:cover;
+border-radius:50%;
+border:4px solid #FFD000;
+box-shadow:0 0 20px #FFD000;
+}
+
+/* CONTATO */
+
+.contato{
+min-height:70vh;
+padding:4rem 2rem;
+background:#0a0a0a;
+text-align:center;
+opacity:0;
+transform: translateY(50px);
+transition:all 1s ease;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:768px){
+
+.title{font-size:3rem;}
+
+.subtitle{font-size:1.3rem;}
+
+.sobre-container{
+flex-direction:column;
+}
+
+}
+
+/* CURSOR PERSONALIZADO */
+
+.custom-cursor{
+width:15px;
+height:15px;
+border:2px solid #FFD000;
+border-radius:50%;
+position:fixed;
+pointer-events:none;
+transform:translate(-50%, -50%);
+transition:transform .1s ease;
+z-index:10000;
+}
+
+.tecnologias{
+min-height:70vh;
+padding:5rem 2rem;
+background:#000;
+text-align:center;
+}
+
+.tech-grid{
+margin-top:3rem;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:2rem;
+max-width:1000px;
+margin-left:auto;
+margin-right:auto;
+}
+
+.tech-item{
+background:#111;
+padding:1.5rem;
+border-radius:12px;
+font-weight:bold;
+color:#FFD000;
+transition:0.3s;
+}
+
+.tech-item:hover{
+transform:translateY(-5px);
+box-shadow:0 0 15px rgba(255,208,0,0.6);
+}
