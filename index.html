@@ -3,24 +3,57 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Duto Automation</title>
+  <title>Duto Automation — Soluções de Tecnologia Sob Medida</title>
+  <meta name="description" content="A Duto Automation desenvolve soluções de tecnologia sob medida para empresas: sites, aplicativos, sistemas, automação de processos e inteligência artificial.">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="image_7ff3926b.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- CURSOR PERSONALIZADO -->
-  <div class="custom-cursor"></div>
-  
+  <!-- HEADER -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+
+      <a href="#hero" class="brand">
+        <span class="duto-yellow">D</span>uto <span class="duto-yellow">A</span>utomation
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="#servicos">Serviços</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#tecnologias">Tecnologias</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+        <a href="https://wa.me/5511944711646" target="_blank" class="btn btn-primary btn-sm">Falar sobre o seu projeto</a>
+      </nav>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+  </header>
 
   <!-- HERO -->
   <section class="hero" id="hero">
-    <canvas id="particles"></canvas>
+    <div class="hero-grid" aria-hidden="true"></div>
 
     <div class="hero-content">
+
+      <a href="#projetos" class="hero-badge">
+        <span class="hero-badge-dot" aria-hidden="true"></span>
+        Projeto em destaque · Mercado Livre
+      </a>
 
       <h1 class="title">
         <span class="duto-yellow">D</span>uto
@@ -28,130 +61,276 @@
       </h1>
 
       <p class="subtitle">
-        Menos processos, mais performance.
+        Soluções de tecnologia sob medida para empresas.
       </p>
 
       <p class="tagline">
-        Onde a Duto entra, o tempo sobra, tarefas diminuem e resultados aparecem.
+        Sites, aplicativos, sistemas, automação de processos e inteligência artificial — desenvolvidos sob medida para a necessidade real do seu negócio.
       </p>
 
-      <a href="#servicos" class="btn">Automatize seu negócio</a>
+      <a href="#servicos" class="btn btn-primary">Conheça nossas soluções</a>
 
     </div>
   </section>
 
   <!-- SERVIÇOS -->
   <section class="servicos reveal" id="servicos">
-    <h2>Automação para Empresas</h2>
+    <div class="section-inner">
 
-    <div class="cards">
+      <h2>Soluções de Tecnologia para Empresas</h2>
 
-      <div class="card">
-        <h3>Automação de Processos</h3>
-        <p>Automatizamos tarefas repetitivas e processos manuais para sua empresa ganhar produtividade.</p>
+      <div class="cards">
+
+        <div class="card">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="18" x2="12" y2="21"></line></svg>
+          </div>
+          <h3>Sites e Aplicações Web</h3>
+          <p>Desenvolvemos sites institucionais e aplicações web sob medida, com foco em performance e usabilidade para o seu negócio.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2" width="10" height="20" rx="2"></rect><line x1="11" y1="18" x2="13" y2="18"></line></svg>
+          </div>
+          <h3>Aplicativos e Sistemas Personalizados</h3>
+          <p>Criamos aplicativos e sistemas empresariais personalizados, desenhados para atender processos e necessidades específicas de cada empresa.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.6 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.6a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9c.13.4.5.68 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+          </div>
+          <h3>Automação de Processos</h3>
+          <p>Automatizamos tarefas repetitivas e processos manuais para sua empresa ganhar produtividade.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H5a2 2 0 0 0-2 2v3"></path><path d="M21 8V5a2 2 0 0 0-2-2h-3"></path><path d="M16 21h3a2 2 0 0 0 2-2v-3"></path><path d="M3 16v3a2 2 0 0 0 2 2h3"></path><line x1="9" y1="12" x2="15" y2="12"></line></svg>
+          </div>
+          <h3>Integração de Sistemas e APIs</h3>
+          <p>Conectamos APIs, bancos de dados, planilhas e sistemas para tudo funcionar de forma automática e integrada.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
+          </div>
+          <h3>Inteligência Artificial e Agentes de IA</h3>
+          <p>Desenvolvemos soluções de IA para automatizar tarefas, apoiar decisões e otimizar processos.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+          </div>
+          <h3>Automação de Dados e Relatórios</h3>
+          <p>Transformamos dados em relatórios e dashboards automáticos, reduzindo trabalho manual e gerando insights para o negócio.</p>
+        </div>
+
       </div>
 
-      <div class="card">
-        <h3>Integração de Sistemas</h3>
-        <p>Conectamos APIs, bancos de dados, planilhas e sistemas para tudo funcionar de forma automática.</p>
-      </div>
+      <p class="servicos-nota">Cada solução é desenvolvida sob medida, conforme a necessidade específica do cliente.</p>
 
-      <div class="card">
-        <h3>Automação de Relatórios</h3>
-        <p>Relatórios automáticos em Excel e dashboards atualizados sem trabalho manual.</p>
-      </div>
+      <a href="#sobre" class="btn btn-outline">Conheça a Duto Automation</a>
 
-      <div class="card">
-        <h3>Data Automation</h3>
-        <p>Transformamos dados em processos automáticos que geram insights e eficiência para o seu negócio.</p>
+    </div>
+  </section>
+
+  <!-- PROJETO EM DESTAQUE -->
+  <section class="projeto reveal" id="projetos">
+    <div class="section-inner">
+
+      <h2>Projeto em Destaque</h2>
+
+      <div class="projeto-card">
+
+        <div class="projeto-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"></rect><line x1="7" y1="7" x2="7" y2="17"></line><line x1="10" y1="7" x2="10" y2="17"></line><line x1="13" y1="7" x2="13" y2="17"></line><line x1="16" y1="7" x2="16" y2="17"></line><line x1="19" y1="7" x2="19" y2="17"></line></svg>
+        </div>
+
+        <div class="projeto-conteudo">
+
+          <h3>Simulador de RF para Treinamento — desenvolvido para o Mercado Livre</h3>
+
+          <p>
+            A Duto Automation desenvolveu, como prestação de serviço, um simulador de coletor RF (rádio frequência)
+            para treinamento de colaboradores, reproduzindo o fluxo operacional de Armazenamento / Armazenar para Venda.
+          </p>
+
+          <p>
+            A aplicação foi construída como uma PWA (Progressive Web App) que simula a operação real de um dispositivo RF:
+            login de treinamento, leitura de MU/caixa, endereço, produtos e posições, até a confirmação e conclusão do fluxo —
+            permitindo que colaboradores pratiquem o processo antes de operar o dispositivo real.
+          </p>
+
+          <p class="projeto-nota">Projeto desenvolvido pela Duto Automation como prestação de serviço.</p>
+
+        </div>
+
       </div>
 
     </div>
-
-    <a href="#sobre" class="btn">Conheça a Duto Automation</a>
   </section>
-  <section class="tecnologias reveal">
 
- <!-- TECNOLOGIAS -->
-    <h2>Tecnologias que Utilizamos</h2>
+  <!-- TECNOLOGIAS -->
+  <section class="tecnologias reveal" id="tecnologias">
+    <div class="section-inner">
 
-<div class="tech-grid">
+      <h2>Tecnologias que Utilizamos</h2>
 
-<div class="tech-item">Python</div>
+      <div class="tech-grid">
 
-<div class="tech-item">SQL</div>
+        <div class="tech-item">
+          <span class="tech-item-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg></span>
+          Python
+        </div>
 
-<div class="tech-item">APIs</div>
+        <div class="tech-item">
+          <span class="tech-item-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="8" ry="3"></ellipse><path d="M4 5v6c0 1.66 3.58 3 8 3s8-1.34 8-3V5"></path><path d="M4 11v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6"></path></svg></span>
+          SQL
+        </div>
 
-<div class="tech-item">n8n</div>
+        <div class="tech-item">
+          <span class="tech-item-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.6" y1="10.5" x2="15.4" y2="6.5"></line><line x1="8.6" y1="13.5" x2="15.4" y2="17.5"></line></svg></span>
+          APIs
+        </div>
 
-<div class="tech-item">Integração de Sistemas</div>
+        <div class="tech-item">
+          <span class="tech-item-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"></rect><rect x="14" y="3" width="7" height="7" rx="1"></rect><rect x="14" y="14" width="7" height="7" rx="1"></rect><path d="M10 6.5h4"></path><path d="M17.5 10v4"></path></svg></span>
+          n8n
+        </div>
 
-<div class="tech-item">Excel Automation</div>
+        <div class="tech-item">
+          <span class="tech-item-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H5a2 2 0 0 0-2 2v3"></path><path d="M21 8V5a2 2 0 0 0-2-2h-3"></path><path d="M16 21h3a2 2 0 0 0 2-2v-3"></path><path d="M3 16v3a2 2 0 0 0 2 2h3"></path><line x1="9" y1="12" x2="15" y2="12"></line></svg></span>
+          Integração de Sistemas
+        </div>
 
-<div class="tech-item">Banco de Dados</div>
+        <div class="tech-item">
+          <span class="tech-item-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="3" y1="15" x2="21" y2="15"></line><line x1="9" y1="3" x2="9" y2="21"></line><line x1="15" y1="3" x2="15" y2="21"></line></svg></span>
+          Excel Automation
+        </div>
 
-<div class="tech-item">Data Pipelines</div>
+        <div class="tech-item">
+          <span class="tech-item-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2"></rect><rect x="2" y="14" width="20" height="8" rx="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg></span>
+          Banco de Dados
+        </div>
 
-</div>
+        <div class="tech-item">
+          <span class="tech-item-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"></line><polyline points="14 6 20 12 14 18"></polyline></svg></span>
+          Data Pipelines
+        </div>
 
-</section>
+      </div>
+
+    </div>
+  </section>
 
   <!-- SOBRE -->
   <section class="sobre reveal" id="sobre">
+    <div class="section-inner">
 
-    <div class="sobre-container">
+      <div class="sobre-container">
 
-      <div class="sobre-texto">
+        <div class="sobre-texto">
 
-        <h2>Quem Somos</h2>
+          <h2 class="text-left">Quem Somos</h2>
 
-        <p>
-          A <strong>Duto Automation</strong> é uma empresa focada em
-          <strong>automação de processos, integração de sistemas e data automation</strong>.
-          Nosso objetivo é reduzir tarefas manuais, aumentar produtividade e
-          transformar processos complexos em fluxos automáticos e eficientes.
-        </p>
+          <p>
+            A <strong>Duto Automation</strong> é uma empresa de tecnologia que desenvolve
+            <strong>soluções sob medida para empresas</strong> — sites, aplicações web, aplicativos,
+            sistemas empresariais, automação de processos e inteligência artificial. Nosso objetivo é
+            entender a necessidade real de cada negócio e transformá-la em software funcional,
+            eficiente e sob medida.
+          </p>
 
-        <h3>Sobre João Rafael</h3>
+          <div class="founder-block">
+            <h3>Sobre João Rafael</h3>
 
-        <p>
-          Formado em <strong>Análise e Desenvolvimento de Sistemas</strong>, se formando em <strong>Big Data</strong> e atualmente
-          focado em <strong>Engenharia de Dados e Automação</strong>. Apaixonado por
-          tecnologia e por criar soluções que economizam tempo e aumentam a
-          eficiência das empresas.
-        </p>
+            <p>
+              Formado em <strong>Análise e Desenvolvimento de Sistemas</strong> e atualmente cursando
+              <strong>Engenharia de Software</strong>, com foco em <strong>Engenharia de Dados e Automação</strong>.
+              Apaixonado por tecnologia e por transformar necessidades reais em soluções de software sob medida.
+            </p>
+          </div>
+
+        </div>
+
+        <div class="sobre-foto">
+          <img src="WhatsApp Image 2026-03-09 at 23.33.42.jpeg" alt="Foto de João Rafael">
+        </div>
 
       </div>
 
-      <div class="sobre-foto">
-        <img src="WhatsApp Image 2026-03-09 at 23.33.42.jpeg" alt="Foto de João Rafael">
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="contato reveal" id="contato">
+    <div class="section-inner">
+
+      <h2>Fale Conosco</h2>
+
+      <div class="contato-container">
+
+        <ul class="contato-lista">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16v16H4z" opacity="0"></path><path d="M22 6l-10 7L2 6"></path><path d="M2 6h20v12H2z"></path></svg>
+            <a href="mailto:joaorafasoares01@gmail.com">joaorafasoares01@gmail.com</a>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.574 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <a href="tel:+5511944711646">(11) 94471-1646</a>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line></svg>
+            <a href="#" target="_blank">Instagram</a>
+          </li>
+        </ul>
+
+        <div class="contato-cta">
+          <p>Vamos conversar sobre o seu projeto?</p>
+          <a href="https://wa.me/5511944711646" target="_blank" class="btn btn-primary">
+            Falar sobre o seu projeto
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+
+      <div class="footer-brand">
+        <a href="#hero" class="brand">
+          <span class="duto-yellow">D</span>uto <span class="duto-yellow">A</span>utomation
+        </a>
+        <p>Soluções de tecnologia sob medida para empresas.</p>
+      </div>
+
+      <nav class="footer-nav">
+        <a href="#servicos">Serviços</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#tecnologias">Tecnologias</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <div class="footer-contato">
+        <a href="mailto:joaorafasoares01@gmail.com">joaorafasoares01@gmail.com</a>
+        <a href="tel:+5511944711646">(11) 94471-1646</a>
       </div>
 
     </div>
 
-  </section>
-
-  <!-- CONTATO -->
-
-  <section class="contato reveal" id="contato">
-
-    <h2>Fale Conosco</h2>
-
-    <p>Email: <a href="mailto:joaorafasoares01@gmail.com">joaorafasoares01@gmail.com</a></p>
-
-    <p>Telefone: <a href="tel:+5511944711646">(11) 94471-1646</a></p>
-
-    <p>
-      Instagram:
-      <a href="#" target="_blank">Instagram</a>
-    </p>
-
-    <a href="https://wa.me/5511944711646" target="_blank" class="btn">
-      Falar sobre automação
-    </a>
-
-  </section>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Duto Automation. Todos os direitos reservados.</p>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
 
